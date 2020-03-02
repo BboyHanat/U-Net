@@ -48,6 +48,7 @@ class Solver(object):
 		self.mode = config.mode
 
 		self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+		print("device is: ", self.device)
 		self.model_type = config.model_type
 		self.t = config.t
 		self.build_model()
